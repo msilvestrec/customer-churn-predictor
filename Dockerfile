@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN python src/train.py
+RUN mkdir -p models && python src/train.py
 
 EXPOSE 8000
 
